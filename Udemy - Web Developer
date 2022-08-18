@@ -1,0 +1,165 @@
+# Browsing the Web 
+
+ISP - Internet Service Provider 
+ -> DNS - Domain Name Service (Essentially a phone book)
+ -has all the URL's and sends back the address. So it responds back through ISP the 
+ -IP location and pulls up the website we're looking for 
+
+ -Our own IP address gets sent to the google servers (or whatever website you're
+ -looking at)
+ - That website will no how to send you items back (such as a waitor getting the food
+ - you ordered). The "food" that gets sent back is HTML, CSS and JavaScript. 
+
+
+# Breaking Google 
+# The Internet Backbone 
+SubmarineCableMap.com shows where all the networking cables run through 
+
+//This is the internet ->
+/var/folders/gq/37m4grv94cv3dfrkwkjjg4z80000gn/T/TemporaryItems/(A Document Being Saved By screencaptureui 10)/Screen Shot 2021-11-04 at 12.03.55 PM.png
+
+#Traceroute
+traceroute google.com
+- this will give you a whole bunch of hops, the bottom IP address is google.com's 
+- current IP address
+
+# Developer Fundamentals:
+- How to make speed faster? 
+    - Location of servers 
+    - How many trips
+    - Size of files
+
+# What does a developer do?
+- Back End
+    - Server (Node.js etc)
+    - Database (Postgres etc)
+- Front End 
+    - React, JavaScript, CSS, HTML 
+
+# WWW vs the Internet 
+vox.com/internetmaps
+
+Before the internet it connected academic communities 
+Became faster and wide spread...
+Next issue; wanted to share documents... each computer had different doc formats etc
+Solution: Tim Burner Lee - Created the World Wide Web
+    - He created the first server for a website 
+First Website:
+http://info.cern.ch/hypertext/WWW/TheProject.html
+
+# HTML, CSS, JavaScript 
+- CSS (visualizations)(done in the style bar)
+- JavaScript (interactions)
+- HTML (text)
+
+- CSS / Style 
+    element.style {
+    color: blue;
+    color: red;
+    background-color: red;
+}
+
+- JavaScript
+alert ("Hello world") in console 
+
+# Developer History 
+Now: HTML5, CSS3
+
+# Exercise: Adding CSS and JavaScript to Tim's Website
+
+# Build Your First Website 
+- need to put:
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Website</title>
+</head>
+<body>
+</body>
+</html>
+
+# HTML Tags
+<b>Lorem ipsum </b> <i> 
+
+have evolved to <strong> and <em> for emphasis
+
+#HTML Tags 2
+
+Line:
+<hr>
+Image:
+<img src="https://www.kroger.com/product/images/xlarge/front/0000000004131" alt="Fuji Fuji" width="500" height="600">
+
+# Anchor Tag
+To link:
+<a href="">
+
+# HTMl forms 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Register</title>
+</head>
+<body>
+<form>
+	First Name: <input type="text" required><br>
+	Last Name: <input type="text"><br>
+	Birth Day: <input type="date"><br> #you can do date
+	Who do I love?:<br> # radio is a select button (need to specify name)
+	<input type="radio" name = "who">Jack<br>
+	<input type="radio" name = "who">Jack<br>
+	<input type="radio" name = "who">Jack<br>
+	Animals? : <br> # checkbox is well, a check box (specify a name)
+	<input type="checkbox" name = "animal">Dog<br>
+	<input type="checkbox" name = "animal">Cat<br>
+	Email: <input type="email"><br> # you can do email! probably a lot of other validation
+	<input type="submit" value="Register!">
+	<input type="reset">
+</form>
+</body>
+</html>
+
+#HTML forms 2
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Register</title>
+</head>
+<body>
+<form>
+	First Name: <input type="text" name="firstname" required><br>
+	Last Name: <input type="text" name="lastname"><br>
+	Birth Day: <input type="date" name="birth"><br>
+	Who do I love?:<br>
+	<input type="radio" name = "who">Jack<br>
+	<input type="radio" name = "who">Jack<br>
+	<input type="radio" name = "who">Jack<br>
+	Animals? : <br>
+	<input type="checkbox" name = "animal">Dog<br>
+	<input type="checkbox" name = "animal">Cat<br>
+	Email: <input type="email" name="email"><br>
+	Cars: <br>
+	<select>
+		<option value="volvo" name="volvo">Tesla</option>
+		<option value="rivian" name="rivian">Rivian</option>
+	</select><br>
+	Password: <input type="password" min="5" name="password"><br>
+	<input type="submit" value="Register!">
+	<input type="reset">
+</form>
+</body>
+</html>
+
+Once you assign names everywhere, you can actually submit. this is called a query tag that is created
+file:///Volumes/GoogleDrive/My%20Drive/Web%20Development%20%20%20UI%20%20%20UX/register.html?firstname=h&lastname=b&birth=9888-09-08&who=on&animal=on&email=haileytucker_10%40hotmail.com&password=halkjdklj 
+
+? the question mark says that we will start giving you lots of data 
+url encoding, it encodes the @ sign with %40 
+
+#HTMl Tags 3
+<div> breaks up items in the page
+<span> inline break up of the page
+
+#HTML vs HTML5
